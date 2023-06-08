@@ -1,15 +1,33 @@
 # ArtMl-Autoencoder-Som
-Banco de dados real de imagens ,usando autoencoder e mapa auto ajustáveis (SOM) para agrupamento de fotos de uma galeria de arte de Nova York Trabalhoacadêmico realizado em parceria com João Pedro Neto, como trabalho final da disciplina de mestrado da UFBA Tópicos em Inteligência Computacional III. Banco de dados retirado da National Gallery Of Art de Nova York no link https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/published_images.csv. Foi feito tratamrnto dos dados, redução de imagens por se tratar de um banco com 104 gigas , reduzido para 1.4 gigas , em um banco sómente de fotos. Uso de autoencoder e implementação deo SOM , sem o uso da biblioteca minisom.
-2 / 2
-Apresentação: Banco de Dados Real de Imagens usando Autoencoder e Mapa Autoajustável (SOM) para Agrupamento de Fotos de uma Galeria de Arte de Nova York
-trabalho final da disciplina de mestrado "Tópicos em Inteligência Computacional III" na UFBA. Nosso projeto envolve a criação de um banco de dados real de imagens utilizando técnicas de aprendizado não supervisionado, como o autoencoder e o mapa autoajustável (SOM), para o agrupamento de fotos do acervo  de imagens baseado da coleção de obras de arte da National Gallery Of Art de Nova York. 
-Foi utilizado o conjunto de dados disponível no link https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/published_images.csv. No entanto, devido ao tamanho original do banco de dados, que era de 104 gigabytes, foi necessário realizar um tratamento nos dados, reduzindo-o para 1.4 gigabytes, focando apenas nas imagens reduzidas  para a dimensão de 32x32.
+Banco de Dados Real de Imagens com Autoencoder e Mapa Autoajustável (SOM) para Agrupamento de Fotos de uma Galeria de Arte de Nova York
+
+Introdução: 
+
+Este projeto acadêmico é o trabalho final da disciplina de mestrado da UFBA (Universidade Federal da Bahia) na disciplina de Tópicos em Inteligência Computacional III. Neste projeto, trabalhamos com um banco de dados real de imagens, utilizando técnicas de processamento de imagens e aprendizado de máquina para agrupar fotos de uma galeria de arte de Nova York.
+
+Banco de Dados: 
+
+O banco de dados utilizado neste projeto foi retirado da National Gallery Of Art de Nova York. Os dados estão disponíveis publicamente no link https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/published_images.csv. Esse banco de dados contém uma grande quantidade de imagens, totalizando cerca de 104 gigabytes de dados. No entanto, para facilitar o processamento e a análise, realizamos um tratamento dos dados e reduzimos o banco para aproximadamente 1,4 gigabytes, mantendo apenas as imagens na dimensão de 32x32.
 
 
+Técnicas Utilizadas:
 
-Metodologia: Para alcançar nossos objetivos, utilizamos o autoencoder, uma técnica de aprendizado não supervisionado, para reduzir a dimensionalidade das imagens e extrair suas principais características. Isso nos permitiu representar as imagens em um espaço latente de menor organizam de acordo com as características das imagens. Essa organização permite a formação de grupos ou clusters com imagens similares.
-Com a implementação do autoencoder e do SOM, obtivemos resultados interessantes em nosso banco de dados de imagens. Foi possível observar que imagens semelhantes foram agrupadas em clusters próximos no mapa SOM. Isso demonstra que o método utilizado foi eficaz na tarefa de agrupamento das fotos da galeria de arte.
-Esse trabalho  acadêmico realizado em parceria com João Pedro Neto,dimensão, mantendo as informações relevantes.
-Além disso, implementamos o mapa autoajustável (SOM) para realizar o agrupamento das fotos da galeria de arte. O SOM é uma técnica que cria uma grade bidimensional de neurônios que se organizam de acordo com as características das imagens. Essa organização permite a formação de grupos ou clusters com imagens similares.
-Com a implementação do autoencoder e do SOM, obtivemos resultados interessantes em nosso banco de dados de imagens. Foi possível observar que imagens semelhantes foram agrupadas em clusters próximos no mapa SOM. Isso demonstra que o método utilizado foi eficaz na tarefa de agrupamento das fotos da galeria de arte.
-Esse trabalho  acadêmico realizado em parceria com João Pedro Neto,
+
+    1. Tratamento de Dados: Antes de prosseguir com as etapas de análise, realizamos um tratamento dos dados para garantir a qualidade e a usabilidade das imagens. Isso incluiu a remoção de imagens corrompidas ou inválidas, a padronização do formato e tamanho das imagens, bem como a redução do tamanho do banco de dados para facilitar a manipulação.
+    
+    
+    2. Autoencoder: Utilizamos a técnica de autoencoder para extrair características relevantes das imagens do banco de dados. O autoencoder é uma rede neural que aprende a codificar uma imagem em um espaço latente de dimensionalidade inferior e, em seguida, decodifica a imagem a partir desse espaço latente. Isso permite que o autoencoder aprenda uma representação compacta das imagens, capturando as informações mais importantes para a reconstrução.
+    
+    
+    3. Mapa Autoajustável (SOM): Além do autoencoder, implementamos um Mapa Autoajustável, também conhecido como Self-Organizing Map (SOM). A SOM é uma técnica de aprendizado não supervisionado que mapeia os dados em um espaço bidimensional ou tridimensional, preservando as relações topológicas entre os dados originais. Neste projeto, utilizamos a SOM para agrupar as imagens em diferentes regiões do mapa, com base em suas características semelhantes aprendidas pelo autoencoder.
+    
+    
+Resultados e Conclusões: 
+
+Após a aplicação do autoencoder e da SOM, obtivemos resultados interessantes. As imagens foram agrupadas em diferentes regiões do mapa, refletindo suas semelhanças e características compartilhadas. Isso possibilita a exploração eficiente do banco de dados, facilitando a busca por imagens semelhantes e a descoberta de padrões interessantes.
+
+
+Por fim, gostaríamos de ressaltar que a implementação do autoencoder e da SOM foi realizada sem o uso da biblioteca "minisom", visando uma maior compreensão e controle sobre o processo.
+
+
+Projeto realizado em parceria com João Pedro Neto.
