@@ -12,14 +12,13 @@ O banco de dados utilizado neste projeto foi retirado da National Gallery Of Art
 
 Técnicas Utilizadas:
 
-
-    1. Tratamento de Dados: Antes de prosseguir com as etapas de análise, realizamos um tratamento dos dados para garantir a qualidade e a usabilidade das imagens. Isso incluiu a remoção de imagens corrompidas ou inválidas, a padronização do formato e tamanho das imagens, bem como a redução do tamanho do banco de dados para facilitar a manipulação.
+1. Tratamento de Dados: Antes de prosseguir com as etapas de análise, realizamos um tratamento dos dados para garantir a qualidade e a usabilidade das imagens. Isso incluiu a remoção de imagens corrompidas ou inválidas, a padronização do formato e tamanho das imagens, bem como a redução do tamanho do banco de dados para facilitar a manipulação.
     
     
-    2. Autoencoder: Utilizamos a técnica de autoencoder para extrair características relevantes das imagens do banco de dados. O autoencoder é uma rede neural que aprende a codificar uma imagem em um espaço latente de dimensionalidade inferior e, em seguida, decodifica a imagem a partir desse espaço latente. Isso permite que o autoencoder aprenda uma representação compacta das imagens, capturando as informações mais importantes para a reconstrução.
+2. Autoencoder: Utilizamos a técnica de autoencoder para extrair características relevantes das imagens do banco de dados. O autoencoder é uma rede neural que aprende a codificar uma imagem em um espaço latente de dimensionalidade inferior e, em seguida, decodifica a imagem a partir desse espaço latente. Isso permite que o autoencoder aprenda uma representação compacta das imagens, capturando as informações mais importantes para a reconstrução.
     
     
-    3. Mapa Autoajustável (SOM): Além do autoencoder, implementamos um Mapa Autoajustável, também conhecido como Self-Organizing Map (SOM). A SOM é uma técnica de aprendizado não supervisionado que mapeia os dados em um espaço bidimensional ou tridimensional, preservando as relações topológicas entre os dados originais. Neste projeto, utilizamos a SOM para agrupar as imagens em diferentes regiões do mapa, com base em suas características semelhantes aprendidas pelo autoencoder.
+3. Mapa Autoajustável (SOM): Além do autoencoder, implementamos um Mapa Autoajustável, também conhecido como Self-Organizing Map (SOM). A SOM é uma técnica de aprendizado não supervisionado que mapeia os dados em um espaço bidimensional ou tridimensional, preservando as relações topológicas entre os dados originais. Neste projeto, utilizamos a SOM para agrupar as imagens em diferentes regiões do mapa, com base em suas características semelhantes aprendidas pelo autoencoder.
     
     
 Resultados e Conclusões: 
